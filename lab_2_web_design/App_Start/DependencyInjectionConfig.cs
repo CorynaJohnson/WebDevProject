@@ -18,7 +18,7 @@ namespace lab_2_web_design.App_Start
 
             // Register your types, for instance:
             container.Register<IRepository, EfRepository>();
-            container.Register<IUser, UserService>();
+            container.Register<IUser, UserService>(); //*********************************************************************
 
             // This is an extension method from the integration package.
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());

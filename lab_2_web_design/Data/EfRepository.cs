@@ -26,6 +26,14 @@ namespace lab_2_web_design.Data
             _dataContext.Yarn.Add(yarn);
             _dataContext.SaveChanges();
         }
+        public bool doesUserHaveYarn(User user)
+        {
+            int yarnCount = _dataContext.Entry(user)
+                          .Collection(userId => userId.Yarns)
+                          .Query()
+                          .Count();
+            return yarnCount>0;
+        }
 
         public List<User> GetAllUsers()
         {

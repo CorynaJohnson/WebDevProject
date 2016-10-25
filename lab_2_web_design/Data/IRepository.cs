@@ -19,5 +19,6 @@ namespace lab_2_web_design.Data
         Yarn getYarn(int id);
         void updateYarn(Yarn id);
         void removeYarn(Yarn id);
+        bool doesUserHaveYarn(User user);
     }
 }
