@@ -5,6 +5,11 @@
     <title>Application Name: Registration</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <script type="text/javascript" src="../scripts/register.js"></script>
+    <script type="text/javascript">
+            function submit() {
+                alert("submitting");
+            }
+    </script>
 </head>
 
 <body>
@@ -35,19 +40,20 @@
         </div>
         <div class="form-control">
             <label for="">Year in School: </label>
-            <input id="Year" type="radio" name="Year" >Freshman
-            <input id="Year" type="radio" name="Year" >Sophmore
-            <input id="Year" type="radio" name="Year" >Junior
-            <input id="Year" type="radio" name="Year" >Senior<br />
+            <input id="Year1" type="radio" value="Freshman" >Freshman
+            <input id="Year2" type="radio" value="Sophmore" >Sophmore
+            <input id="Year3" type="radio" value="Junior" >Junior
+            <input id="Year4" type="radio" value="Senior" >Senior<br />
         </div>
         <div class="form-control">
             <button type="submit">Submit</button>
         </div>
     </form>
-
-    Registered: <span id="result"></span>
+    <div class="registered">
+        Registered: <span id="result"></span>
+    </div>
     <footer>
-        it's a footer! &copy;2016
+        <br /> a footer! &copy;2016
     </footer>
 </body>
 </html>

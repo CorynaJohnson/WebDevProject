@@ -1,4 +1,9 @@
-﻿body {
+﻿.registered {
+    font-size: 20px;
+    color:turquoise;
+}
+
+body {
     font-family: 'Comic Sans MS';
     font-size: 12px;
     background-color: dimgrey;
@@ -41,3 +46,4 @@ a:link{
 table{
     border:2px solid;
 }
+
