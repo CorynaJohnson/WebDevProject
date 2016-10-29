@@ -1,0 +1,43 @@
+﻿body {
+    font-family: 'Comic Sans MS';
+    font-size: 12px;
+    background-color: dimgrey;
+    color: greenyellow;
+}
+
+header{
+    background-color: greenyellow;
+    color: dimgrey;
+    height:40px;
+    padding-top: 10px;
+}
+
+a{
+    color:black;
+}
+a:link{    
+    text-decoration: none;
+}
+
+.nav{
+    background-color: dimgrey;
+    color:greenyellow;
+    height:40px;
+    padding-top: 10px;
+}
+
+
+
+.paragraphs{
+    color:white;
+    font-style:italic;
+}
+
+.form-control{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+table{
+    border:2px solid;
+}

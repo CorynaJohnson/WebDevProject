@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using lab_2_web_design.Models;
 using lab_2_web_design.Services;
+using SimpleInjector;
+using SimpleInjector.Integration.Web;
+using SimpleInjector.Integration.Web.Mvc;
 
 namespace UnitTest
 {
@@ -17,7 +20,7 @@ namespace UnitTest
         [SetUp]
         public void SetUp()
         {
-            _userService = new UserService();
+            //_userService = new UserService();
         }
 
         [Test]

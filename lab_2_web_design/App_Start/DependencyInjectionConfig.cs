@@ -17,8 +17,8 @@ namespace lab_2_web_design.App_Start
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 
             // Register your types, for instance:
-            container.Register<IRepository, EfRepository>();
-            container.Register<IUser, UserService>(); //*********************************************************************
+            container.Register<IRepository, EfRepository>(Lifestyle.Scoped);
+            container.Register<IUser, UserService>(Lifestyle.Scoped); //*********************************************************************
 
             // This is an extension method from the integration package.
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
