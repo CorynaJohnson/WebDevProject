@@ -9,6 +9,8 @@ using lab_2_web_design.Services;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
+using FakeItEasy;
+using lab_2_web_design.Data;
 
 namespace UnitTest
 {
@@ -16,11 +18,14 @@ namespace UnitTest
     public class hasYarnTest
     {
         private IUser _userService;
+        private IRepository _fakeRepository;
 
         [SetUp]
         public void SetUp()
         {
-            //_userService = new UserService();
+            _fakeRepository = A.Fake<IRepository>();
+
+            _userService = new UserService(_fakeRepository);
         }
 
         [Test]
@@ -33,6 +38,7 @@ namespace UnitTest
                 EmailAdress = "Joebob@site.com",
                 hasYarn = false
             };
+            A.CallTo(() => _fakeRepository.doesUserHaveYarn(A<User>.Ignored)).Returns(false);
 
             var result = _userService.UserhasYarn(user);
 
