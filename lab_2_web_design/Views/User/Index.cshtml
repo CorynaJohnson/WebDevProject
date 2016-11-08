@@ -9,7 +9,7 @@
 
 <p>
     @*@Html.ActionLink("Create New", "Create")*@
-    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-lg" })
+    @Html.ActionLink("Create New", "Create", null, htmlAttributes: new { @class = "btn btn-lg btn-default" })
 </p>
 <table class="table table-striped table-bordered">
     <tr>
@@ -34,7 +34,7 @@
 @foreach (var item in Model)
 {
     
-    <tr class="@(@item.hasYarn ? "success" : "") ">
+    <tr class="@(@item.hasYarn ? "success" : "")">
     @*<tr style='background-color: @(@item.hasYarn ? "green" : "pink")'>*@
         <td>
             @Html.DisplayFor(modelItem => item.FirstName)
@@ -50,11 +50,11 @@
         </td>
         <td>
             @*@Html.ActionLink("Edit", "Edit", new { id = item.UserId }) |*@
-            @Html.ActionLink("Edit", "Edit", new { id = item.UserId }, new { @class="btn-sm"}) 
+            @Html.ActionLink("Edit", "Edit", new { id = item.UserId }, htmlAttributes: new { @class="btn btn-sm btn-default"}) 
             @*@Html.ActionLink("Details", "Details", new { id = item.UserId }) |*@
-            @Html.ActionLink("Details", "Details", new { id = item.UserId },  new { @class="btn-sm" }) 
+            @Html.ActionLink("Details", "Details", new { id = item.UserId }, htmlAttributes: new { @class="btn btn-sm btn-default" }) 
             @*@Html.ActionLink("Delete", "Delete", new { id = item.UserId })*@
-            @Html.ActionLink("Delete", "Delete", new { id = item.UserId }, new { @class="btn-sm" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.UserId }, htmlAttributes: new { @class="btn btn-sm btn-default" })
         </td>
     </tr>
 }

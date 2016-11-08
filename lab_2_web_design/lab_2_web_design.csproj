@@ -141,6 +141,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -150,6 +152,9 @@
     <Content Include="fonts\scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="fonts\scripts\bootstrap.js" />
     <Content Include="fonts\scripts\bootstrap.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="fonts\scripts\jquery-1.10.2.js" />
     <Content Include="fonts\scripts\jquery-1.10.2.min.js" />
@@ -157,6 +162,11 @@
     <Content Include="HTML\Help.html" />
     <Content Include="HTML\html_style.html" />
     <Content Include="HTML\Registration.html" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\register.js" />
     <Content Include="styles\styles.css" />
     <Content Include="Views\Shared\style.css" />
@@ -210,9 +220,6 @@
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Yarn\Create.cshtml" />
     <Content Include="Views\Yarn\Delete.cshtml" />
@@ -221,6 +228,9 @@
     <Content Include="Views\Yarn\Index.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\Bootstrap\Index.cshtml" />
+    <Content Include="Views\User\Details.cshtml" />
+    <Content Include="Views\User\Delete.cshtml" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
