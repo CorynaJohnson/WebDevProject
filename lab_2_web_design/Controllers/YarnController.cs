@@ -125,6 +125,7 @@ namespace lab_2_web_design.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Yarn yarn = _dataRepository.getYarn(id);
+            _dataRepository.removeYarn(yarn);
             return RedirectToAction("Index");
         }
         private void GetUserList()

@@ -159,6 +159,7 @@
     <Content Include="HTML\Registration.html" />
     <Content Include="scripts\register.js" />
     <Content Include="styles\styles.css" />
+    <Content Include="Views\Shared\style.css" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
@@ -167,6 +168,7 @@
   <ItemGroup>
     <Compile Include="App_Start\DependencyInjectionConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BootstrapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\YarnController.cs" />
@@ -218,6 +220,7 @@
     <Content Include="Views\Yarn\Edit.cshtml" />
     <Content Include="Views\Yarn\Index.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\Bootstrap\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
